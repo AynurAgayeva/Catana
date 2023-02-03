@@ -1,0 +1,746 @@
+body,
+html {
+  overflow-x: hidden;
+}
+
+.navbar {
+  padding: 30px 0px;
+
+  img {
+    margin-left: 30px;
+  }
+}
+
+// ----------------MAIN-------------
+
+.main {
+  .row {
+    .main-left {
+      padding-top: 100px;
+
+      .new {
+        color: #fff;
+        padding: 3px 20px;
+        background-color: #b77e31;
+        border: none;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 1px;
+
+        margin-bottom: 30px;
+      }
+
+      h1 {
+        font-size: 65px;
+        font-weight: 300;
+        letter-spacing: 3px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        margin-bottom: 170px;
+      }
+
+      hr {
+        width: 50%;
+
+        height: 25px;
+        margin-top: -140px;
+      }
+
+      p {
+        color: #999;
+        font-weight: 400;
+        margin-bottom: 30px;
+      }
+
+      .shop {
+        text-decoration: none;
+        font-weight: 600;
+        color: #111111;
+        font-size: 16px;
+
+        &:hover {
+          color: #b77e31;
+        }
+
+        ::after {
+          content: "";
+          position: absolute;
+        }
+      }
+    }
+  }
+}
+
+// ---------------ABOUT------------------
+
+.about {
+  .row {
+    .about-left {
+      background-image: url(../images/shop-1.jpg);
+      background-repeat: no-repeat;
+      object-fit: cover;
+      background-position: center;
+      position: relative;
+      transition: 1s;
+
+      .about-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        height: 560px;
+        background-color: rgba($color: #f7f6f6, $alpha: 0.8);
+        opacity: 0;
+
+        h4 {
+          color: black;
+        }
+      }
+
+      &:hover .about-text {
+        opacity: 1;
+      }
+    }
+
+    .about-right {
+      padding-left: 80px;
+      min-height: 300px;
+      background-color: #f7f6f6;
+      cursor: pointer;
+
+      h2 {
+        padding-top: 50px;
+        letter-spacing: 2px;
+        color: #b77e31;
+        font-size: 28px;
+      }
+
+      h1 {
+        letter-spacing: 3px;
+        font-size: 60px;
+        font-weight: 400;
+        margin-top: -10px;
+        margin-bottom: 30px;
+      }
+
+      .card-link {
+        text-decoration: none;
+        font-weight: 600;
+        color: #111111;
+        font-size: 16px;
+        padding-bottom: 100px;
+      }
+    }
+
+    &:hover .about-right {
+      box-shadow: 5px 5px 5px 0px rgba(215, 215, 215, 0.6);
+    }
+  }
+
+  .about-left-two {
+    margin-top: 50px;
+
+    .about-text {
+      text-align: center;
+      padding-top: 250px;
+      width: 500px;
+      height: 580px;
+      background-color: rgba($color: #f7f6f6, $alpha: 0.8);
+      opacity: 0;
+      transition: 600ms ease;
+
+      h4 {
+        color: black;
+      }
+    }
+
+    background-image: url(../images/shop-3.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+
+    &:hover .about-text {
+      opacity: 1;
+    }
+  }
+}
+
+// ---------------ABOUT-TWO--------------
+.about-right-two {
+  margin-top: -200px;
+
+  .about-text {
+    text-align: center;
+    padding-top: 250px;
+    width: 500px;
+    height: 570px;
+    background-color: rgba($color: #f7f6f6, $alpha: 0.8);
+    opacity: 0;
+    transition: 600ms ease;
+
+    h4 {
+      color: black;
+    }
+  }
+
+  max-width: 500px;
+  max-height: 600px;
+  background-image: url(../images/shop-2.jpg);
+
+  &:hover .about-text {
+    opacity: 1;
+  }
+}
+
+// ----------------TREND----------------------
+.trend {
+  h1 {
+    font-family: Jost, sans-serif;
+    letter-spacing: 3px;
+    font-weight: 500;
+    font-size: 45px;
+    color: black;
+
+    &::after {
+      content: "";
+      width: 60px;
+      height: 8px;
+      background-color: #b77e31;
+      display: block;
+      margin-top: 5px;
+      margin-left: 120px;
+    }
+  }
+
+  .row {
+    .card-bg {
+      height: 400px;
+      background-image: url(../images/trend-real1.jpg);
+      background-size: cover;
+
+      &:hover .card-one {
+        opacity: 1;
+      }
+    }
+
+    .main-card {
+      height: 400px;
+
+      background-size: cover;
+      opacity: 0;
+      transition: 1s;
+    }
+
+    .card-one {
+      width: 100%;
+      position: relative;
+      background-image: url(../images/trend1-bg.jpg);
+
+      .fa-solid {
+        padding-left: 270px;
+        padding-top: 10px;
+        cursor: pointer;
+        z-index: 10;
+
+        &:hover {
+          color: #b77e31;
+        }
+      }
+
+      button {
+        margin-top: 260px;
+        margin-left: 60px;
+        color: white;
+        background-color: #111111;
+        border-radius: 30px;
+        padding: 10px 40px;
+      }
+    }
+
+    .card-bg-two {
+      height: 400px;
+      background-image: url(../images/trend-real2.jpg);
+      background-size: cover;
+
+      &:hover .card-two {
+        opacity: 1;
+      }
+    }
+
+    .card-two {
+      width: 300px;
+      height: 400px;
+      background-color: red;
+      position: relative;
+      background-image: url(../images/trend2-bg.jpg);
+
+      .fa-solid {
+        padding-left: 270px;
+        padding-top: 10px;
+        cursor: pointer;
+        z-index: 10;
+
+        &:hover {
+          color: #b77e31;
+        }
+      }
+
+      button {
+        margin-top: 260px;
+        margin-left: 60px;
+        color: white;
+        background-color: #111111;
+        border-radius: 30px;
+        padding: 10px 40px;
+      }
+    }
+
+    .card-two {
+      width: 300px;
+      height: 400px;
+      background-color: red;
+      position: relative;
+      background-image: url(../images/trend2-bg.jpg);
+
+      .fa-solid {
+        padding-left: 270px;
+        padding-top: 10px;
+        cursor: pointer;
+        z-index: 10;
+
+        &:hover {
+          color: #b77e31;
+        }
+      }
+
+      button {
+        margin-top: 260px;
+        margin-left: 60px;
+        color: white;
+        background-color: #111111;
+        border-radius: 30px;
+        padding: 10px 40px;
+      }
+    }
+
+    .card-bg-three {
+      height: 400px;
+      background-image: url(../images/trend-real3.jpg);
+      background-size: cover;
+
+      &:hover .card-three {
+        opacity: 1;
+      }
+
+      .card-three {
+        width: 300px;
+        height: 400px;
+        background-color: red;
+        position: relative;
+        background-image: url(../images/trend33-bg.jpg);
+        background-size: cover;
+        opacity: 0;
+        transition: 1s;
+
+        .fa-solid {
+          padding-left: 270px;
+          padding-top: 10px;
+          cursor: pointer;
+          z-index: 10;
+
+          &:hover {
+            color: #b77e31;
+          }
+        }
+
+        button {
+          margin-top: 260px;
+          margin-left: 60px;
+          color: white;
+          background-color: #111111;
+          border-radius: 30px;
+          padding: 10px 40px;
+        }
+      }
+    }
+  }
+}
+
+// -----------STORY---------------
+.story {
+  h1 {
+    &::after {
+      content: "";
+      width: 50px;
+      height: 8px;
+      background-color: #b77e31;
+      display: block;
+      margin-top: 15px;
+      margin-left: 0px;
+    }
+  }
+
+  .story-left {
+    margin-right: 20px;
+    width: 100%;
+    background-color: #f7f6f6;
+
+    .story-text {
+      padding: 50px;
+      width: 90%;
+    }
+  }
+
+  .story-right {
+    .about-text {
+      text-align: center;
+      padding-top: 250px;
+      width: 580px;
+      height: 580px;
+      background-color: rgba($color: #f7f6f6, $alpha: 0.8);
+      opacity: 0;
+      transition: 600ms ease;
+
+      h4 {
+        color: black;
+      }
+    }
+
+    background-image: url(../images/story.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+
+    &:hover .about-text {
+      opacity: 1;
+    }
+  }
+}
+
+// -----------TREND-TWO----------------
+.trend-two {
+  h1 {
+    font-family: Jost, sans-serif;
+    letter-spacing: 3px;
+    font-weight: 500;
+    font-size: 45px;
+    color: black;
+
+    &::after {
+      content: "";
+      width: 60px;
+      height: 8px;
+      background-color: #b77e31;
+      display: block;
+      margin-top: 5px;
+      margin-left: 150px;
+    }
+  }
+
+  .row {
+    .card-bg {
+      height: 350px;
+      background-image: url(../images/trendvol-1.jpg);
+      background-size: cover;
+
+      &:hover .card-one {
+        opacity: 1;
+      }
+    }
+    .main-card {
+      height: 400px;
+      background-size: cover;
+      opacity: 0;
+      transition: 1s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card-one {
+      width: 100%;
+      height: 350px;
+      background-color: red;
+      position: relative;
+      background-image: url(../images/trendvolbg-1.jpg);
+      background-size: cover;
+
+      .fa-solid {
+        margin-bottom: 10px;
+        cursor: pointer;
+        z-index: 10;
+
+        &:hover {
+          color: #b77e31;
+        }
+      }
+
+      button {
+        margin-top: 200px;
+
+        color: white;
+        background-color: #7e1a0b;
+        border: none;
+        border-radius: 30px;
+        padding: 10px 40px;
+      }
+    }
+
+    .card-bg-two {
+      height: 350px;
+      background-image: url(../images/trendvol-3.jpg);
+      background-size: cover;
+
+      &:hover .card-two {
+        opacity: 1;
+      }
+    }
+
+    .card-two {
+      width: 100%;
+      height: 350px;
+      background-color: red;
+      position: relative;
+      background-image: url(../images/trendvolbg-3.jpg);
+
+      .fa-solid {
+        margin-bottom: 10px;
+        cursor: pointer;
+        z-index: 10;
+
+        &:hover {
+          color: #b77e31;
+        }
+      }
+
+      button {
+        margin-top: 200px;
+        color: white;
+        background-color: #7e1a0b;
+        border: none;
+        border-radius: 30px;
+        padding: 10px 40px;
+      }
+    }
+
+    .card-bg-three {
+      height: 350px;
+      background-image: url(../images/trend-real3.jpg);
+      background-size: cover;
+
+      &:hover .card-three {
+        opacity: 1;
+      }
+
+      .card-three {
+        width: 100%;
+        height: 350px;
+        background-color: red;
+        position: relative;
+        background-image: url(../images/trend33-bg.jpg);
+
+        .fa-solid {
+          margin-bottom: 10px;
+          cursor: pointer;
+          z-index: 10;
+
+          &:hover {
+            color: #b77e31;
+          }
+        }
+
+        button {
+          margin-top: 200px;
+          color: white;
+          background-color: #7e1a0b;
+          border: none;
+          border-radius: 30px;
+          padding: 10px 40px;
+        }
+      }
+    }
+
+    .card-bg-four {
+      height: 350px;
+      background-image: url(../images/trendvol-2.jpg);
+      background-size: cover;
+
+      &:hover .card-four {
+        opacity: 1;
+      }
+
+      .card-four {
+        width: 100%;
+        height: 350px;
+        background-color: red;
+        position: relative;
+        background-image: url(../images/trendvolbg-2.jpg);
+
+        .fa-solid {
+          margin-bottom: 10px;
+          cursor: pointer;
+          z-index: 10;
+
+          &:hover {
+            color: #b77e31;
+          }
+        }
+
+        button {
+          margin-top: 200px;
+          color: white;
+          background-color: #7e1a0b;
+          border: none;
+          border-radius: 30px;
+          padding: 10px 40px;
+        }
+      }
+    }
+  }
+}
+
+// --------------VIEW-------------------
+.view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  button {
+    color: black;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 30px;
+    border: 1px solid #111111;
+    padding: 10px 40px;
+    margin-bottom: 50px;
+
+    &:hover {
+      color: #fff;
+      background-color: #111111;
+      transition: 1s;
+    }
+  }
+
+  .news-bg {
+    width: 95%;
+    height: 50vh;
+
+    background-image: url(../images/bg-newsletter.jpg);
+    background-repeat: no-repeat;
+
+    .newsletter {
+      // width: 70%;
+      padding: 30px;
+
+      h1 {
+        font-size: 60px;
+        padding-top: 50px;
+        color: #7e1a0b;
+      }
+
+      .news-text {
+        font-size: 17px;
+        color: #999;
+
+        .emailto {
+          padding: 10px;
+          width: 100%;
+          max-width: 400px;
+        }
+      }
+    }
+  }
+}
+
+// -------------INSTAGRAM-----------------
+.instagram {
+  h1 {
+    font-family: Jost, sans-serif;
+    letter-spacing: 3px;
+    font-weight: 500;
+    font-size: 45px;
+    color: black;
+
+    &::after {
+      content: "";
+      width: 60px;
+      height: 8px;
+      background-color: #b77e31;
+      display: block;
+      margin-top: 5px;
+      margin-left: 150px;
+    }
+  }
+}
+
+// -----------------END----------------
+.end {
+  width: 100%;
+
+  .end-container {
+    background-color: rgba(243, 242, 245, 1);
+
+    .end-item {
+      color: rgba(85, 85, 85, 1);
+      font-size: 15px;
+      line-height: 24px;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+
+      .card-body-one {
+        ul {
+          li {
+            list-style: none;
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+      .card-body-two {
+        color: rgba(85, 85, 85, 1);
+
+        h6 {
+          color: #b77e31;
+          margin-bottom: 15px;
+          margin-left: 28px;
+        }
+
+        ul {
+          li {
+            list-style: none;
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+      .card-body-three {
+        h6 {
+          color: #b77e31;
+          margin-bottom: 15px;
+          margin-left: 28px;
+        }
+
+        ul {
+          li {
+            list-style: none;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    background: rgba(231, 230, 233, 1);
+    color: rgba(183, 126, 49, 1);
+    font-size: 14px;
+    padding-top: 10px;
+  }
+}
+
+.icons {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+}
